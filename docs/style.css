@@ -4,13 +4,7 @@
    a narrow column set off from the left edge, and a bold lowercase wordmark.
    ========================================================================== */
 
-@font-face {
-  font-family: "Inter";
-  src: url("fonts/inter-latin-variable.woff2") format("woff2");
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: swap;
-}
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
 
 :root {
   --bg: #f1f2f3;
@@ -22,14 +16,9 @@
   --code-ink: #2e2f30;
   --selection: #d5d8da;
 
-  --sans: "Inter", -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-    Helvetica, Arial, sans-serif;
-  --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas,
-    "Liberation Mono", monospace;
-
   --gutter: clamp(20px, 1.8vw, 28px);
   --offset: 28vw;
-  --measure: 24em;
+  --measure: 30em;
   --leading: 1.38;
 
   --ease: cubic-bezier(0.2, 0.6, 0.2, 1);
@@ -69,8 +58,10 @@ body {
   min-height: 100%;
   background: var(--bg);
   color: var(--ink);
-  font-family: var(--sans);
-  font-size: 17px;
+  font-family: "Alice", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px !important;
   line-height: var(--leading);
   font-optical-sizing: auto;
   font-feature-settings: "kern" 1, "liga" 1, "calt" 1;

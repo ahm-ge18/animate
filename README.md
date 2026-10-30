@@ -1,5 +1,7 @@
 # animate
 
+**Live:** https://ahm-ge18.github.io/animate/
+
 A small, quiet blog. Markdown in, static HTML out. No framework, no build
 service, no client-side markdown parser — just a folder of `.md` files, one
 stylesheet, and a script that renders everything ahead of time.

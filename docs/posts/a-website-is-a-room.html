@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A Website Is a Room — animate</title>
+<meta name="description" content="On building a place instead of a product.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#f1f2f3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191a1b" media="(prefers-color-scheme: dark)">
+<meta property="og:title" content="A Website Is a Room">
+<meta property="og:description" content="On building a place instead of a product.">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2026-09-02">
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D'http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg'%20viewBox%3D'0%200%2064%2064'%3E%3Crect%20width%3D'64'%20height%3D'64'%20rx%3D'14'%20fill%3D'%23333'%2F%3E%3Ccircle%20cx%3D'32'%20cy%3D'32'%20r%3D'11'%20fill%3D'%23f1f2f3'%2F%3E%3C%2Fsvg%3E">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="wordmark" href="../index.html">animate</a>
+</header>
+<main class="page" id="main">
+  <article class="col">
+    <header class="post-head">
+      <h1 class="post-title">A Website Is a Room</h1>
+      <p class="post-meta"><time datetime="2026-09-02">2 September 2026</time><span class="sep" aria-hidden="true"> · </span>1 min</p>
+    </header>
+    <div class="prose">
+<p>A website is a room. You can tell a lot about the person who made it by what they leave on the floor.</p>
+<p>Most of the modern web is built like an airport: bright, loud, full of signs pointing at things you did not ask for and cannot avoid. Somewhere in the middle of it, I wanted a room with one chair, a window, and a good lamp.</p>
+<h2 id="what-it-costs">What it costs</h2>
+<p>Here is the whole budget for this site:</p>
+<div class="table-wrap">
+<table>
+<thead>
+<tr>
+<th>Part</th>
+<th align="right">Size</th>
+<th>What it does</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Markdown</td>
+<td align="right">2 kB</td>
+<td>The words</td>
+</tr>
+<tr>
+<td>HTML</td>
+<td align="right">4 kB</td>
+<td>The words, in a shape</td>
+</tr>
+<tr>
+<td>CSS</td>
+<td align="right">10 kB</td>
+<td>The light</td>
+</tr>
+<tr>
+<td>JavaScript</td>
+<td align="right">1 kB</td>
+<td>Copy buttons, if you want them</td>
+</tr>
+<tr>
+<td>Typeface</td>
+<td align="right">48 kB</td>
+<td>Inter, latin subset</td>
+</tr>
+</tbody></table>
+</div>
+<p>That is the entire product. No analytics, no cookie banner, no build server, no hydration. The page is a document. It loads once and then it is simply there, the way a room is simply there when you walk into it.</p>
+<hr>
+<h2 id="the-build">The build</h2>
+<p>The whole machine is a folder of markdown and a script that turns it into HTML:</p>
+<pre><code class="language-sh">npm run build
+# built 4 posts → docs/
+</code></pre>
+<p>Then <code>docs/</code> goes to GitHub Pages. That is the deploy.</p>
+<h2 id="rooms-hold-still">Rooms hold still</h2>
+<p>The best thing about a room is that it does not rearrange itself while you are sitting in it. It does not dim the lights to encourage engagement. It has a door, and the door works in both directions.</p>
+<p>I think this is what people mean when they call a site <em>quiet</em>. Not that it is empty, but that it is finished—that someone made a decision, stopped, and left the result alone.</p>
+<p>If you want to see what the room looks like when it is working, read <a href="the-garden.html">The Garden</a>.</p>
+
+    </div>
+    <footer class="post-foot">
+      <a href="../index.html">← Index</a>
+    </footer>
+  </article>
+</main>
+<script src="../app.js" defer></script>
+</body>
+</html>

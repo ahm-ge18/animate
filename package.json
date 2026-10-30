@@ -1,0 +1,14 @@
+{
+  "name": "animate",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A minimal, fully static markdown blog for GitHub Pages.",
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node dev.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

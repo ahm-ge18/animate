@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="A pale disc of light above a flat horizon">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ececed"/>
+      <stop offset="0.72" stop-color="#e7e8e9"/>
+      <stop offset="1" stop-color="#dfe1e2"/>
+    </linearGradient>
+    <linearGradient id="ground" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e3e4e5"/>
+      <stop offset="1" stop-color="#dadcdd"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#fbfbfb" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#f6f6f7" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#f6f6f7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="disc" cx="0.42" cy="0.38" r="0.7">
+      <stop offset="0" stop-color="#fdfdfd"/>
+      <stop offset="0.6" stop-color="#f3f4f5"/>
+      <stop offset="1" stop-color="#e8e9ea"/>
+    </radialGradient>
+    <filter id="soften" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <filter id="grain">
+      <feTurbulence baseFrequency="0.8" type="fractalNoise" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feComponentTransfer>
+        <feFuncA type="linear" slope="0.03"/>
+      </feComponentTransfer>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="1000" fill="url(#sky)"/>
+  <circle cx="800" cy="430" r="400" fill="url(#halo)" filter="url(#soften)"/>
+  <circle cx="800" cy="430" r="186" fill="url(#disc)"/>
+  <rect y="760" width="1600" height="240" fill="url(#ground)"/>
+  <path d="M0 760 H1600" stroke="#cfd1d3"/>
+  <path d="M0 763 H1600" stroke="#f4f5f6" opacity="0.7"/>
+  <rect width="1600" height="1000" filter="url(#grain)"/>
+</svg>
